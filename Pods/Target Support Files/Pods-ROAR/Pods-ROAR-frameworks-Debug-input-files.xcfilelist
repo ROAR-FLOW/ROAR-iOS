@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-ROAR/Pods-ROAR-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
+${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework

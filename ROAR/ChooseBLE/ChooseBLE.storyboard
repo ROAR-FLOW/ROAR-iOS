@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ChooseBLE View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChooseBLE" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ChooseBLEViewController" customModule="ROAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNV-SZ-9em">
+                                <rect key="frame" x="23" y="117" width="351" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="spy-FB-g4R"/>
+                                </constraints>
+                                <state key="normal" title="Choose BLE"/>
+                                <connections>
+                                    <segue destination="zaY-sV-KA6" kind="popoverPresentation" popoverAnchorView="jNV-SZ-9em" id="r2a-a8-KaZ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-rT-IzS">
+                                <rect key="frame" x="103" y="188" width="274" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="e5F-DN-Qd6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Throttle:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOD-vL-fCI">
+                                <rect key="frame" x="20" y="195" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ALp-61-Coi">
+                                <rect key="frame" x="103" y="240" width="274" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Steering:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6em-QR-zXX">
+                                <rect key="frame" x="20" y="247" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvX-KM-gUh">
+                                <rect key="frame" x="140.66666666666666" y="289" width="109" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Send Control"/>
+                                <connections>
+                                    <action selector="onSendControlBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="333-73-YgC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SSID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxS-Bw-MOz">
+                                <rect key="frame" x="23" y="578" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymB-OG-H0j">
+                                <rect key="frame" x="23" y="668" width="74" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="I2E-Dh-NGI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.4Ghz Wifi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-Cl-lBj">
+                                <rect key="frame" x="124" y="515" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PB1-vh-pTi">
+                                <rect key="frame" x="133" y="661" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="password"/>
+                                <connections>
+                                    <action selector="onWifiPasswordEditDidBegin:" destination="Y6W-OH-hqX" eventType="editingDidBegin" id="l6J-vQ-4k1"/>
+                                    <action selector="onWifiPasswordEditDidEnd:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="Mdi-hC-Wte"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcY-H7-4Th">
+                                <rect key="frame" x="133" y="578" width="244" height="30"/>
+                                <state key="normal" title="Scan For Wifi"/>
+                                <connections>
+                                    <action selector="onSSIDClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="nEK-iM-qby"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter new BLE Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0eD-oG-aRd">
+                                <rect key="frame" x="23" y="380" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9w-fp-tkS">
+                                <rect key="frame" x="86" y="719" width="228" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Request to Switch to Wifi"/>
+                                <connections>
+                                    <action selector="onRequestWifiClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vy2-P5-ZsI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaB-QJ-6bS">
+                                <rect key="frame" x="52" y="421" width="286" height="48"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Request BLE Name Change"/>
+                                <connections>
+                                    <action selector="onBLENameChangeBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="B3b-w1-CaU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="y9w-fp-tkS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="86" id="2VJ-aF-1ug"/>
+                            <constraint firstItem="WaB-QJ-6bS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="52" id="2r7-UV-08v"/>
+                            <constraint firstItem="jNV-SZ-9em" firstAttribute="centerX" secondItem="LWo-Cl-lBj" secondAttribute="centerX" constant="-1.5" id="6UG-NL-HqQ"/>
+                            <constraint firstItem="BOD-vL-fCI" firstAttribute="leading" secondItem="6em-QR-zXX" secondAttribute="leading" id="7Kw-qi-fca"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ymB-OG-H0j" secondAttribute="bottom" constant="121" id="932-ad-SvM"/>
+                            <constraint firstItem="jNV-SZ-9em" firstAttribute="leading" secondItem="ALp-61-Coi" secondAttribute="leading" constant="-80" id="Bni-fg-bhK"/>
+                            <constraint firstItem="8oT-rT-IzS" firstAttribute="leading" secondItem="BOD-vL-fCI" secondAttribute="trailing" constant="18" id="Cex-Gf-Yzd"/>
+                            <constraint firstItem="YcY-H7-4Th" firstAttribute="top" secondItem="LWo-Cl-lBj" secondAttribute="bottom" constant="42" id="DR9-2e-M6l"/>
+                            <constraint firstItem="LWo-Cl-lBj" firstAttribute="top" secondItem="WaB-QJ-6bS" secondAttribute="bottom" constant="46" id="EGs-cn-WTo"/>
+                            <constraint firstItem="WaB-QJ-6bS" firstAttribute="leading" secondItem="YcY-H7-4Th" secondAttribute="leading" constant="-81" id="EK4-wS-GNc"/>
+                            <constraint firstItem="ymB-OG-H0j" firstAttribute="centerY" secondItem="PB1-vh-pTi" secondAttribute="centerY" id="GQX-rZ-8lb"/>
+                            <constraint firstItem="8oT-rT-IzS" firstAttribute="top" secondItem="jNV-SZ-9em" secondAttribute="bottom" constant="41" id="Jpz-t1-Qsa"/>
+                            <constraint firstItem="ALp-61-Coi" firstAttribute="top" secondItem="8oT-rT-IzS" secondAttribute="bottom" constant="18" id="Kn4-j8-mUm"/>
+                            <constraint firstItem="hxS-Bw-MOz" firstAttribute="leading" secondItem="ymB-OG-H0j" secondAttribute="leading" id="Kv0-rh-EiT"/>
+                            <constraint firstItem="LWo-Cl-lBj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="124" id="LvT-eX-otj"/>
+                            <constraint firstItem="BOD-vL-fCI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Oph-er-1YN"/>
+                            <constraint firstItem="hxS-Bw-MOz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="UqI-4v-QfO"/>
+                            <constraint firstItem="y9w-fp-tkS" firstAttribute="top" secondItem="PB1-vh-pTi" secondAttribute="bottom" constant="24" id="VwB-Cb-dhR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8oT-rT-IzS" secondAttribute="trailing" constant="13" id="W9A-4r-wFO"/>
+                            <constraint firstItem="BOD-vL-fCI" firstAttribute="centerY" secondItem="8oT-rT-IzS" secondAttribute="centerY" id="WkG-u4-j2G"/>
+                            <constraint firstItem="PB1-vh-pTi" firstAttribute="top" secondItem="YcY-H7-4Th" secondAttribute="bottom" constant="53" id="XEN-Ek-TbY"/>
+                            <constraint firstItem="6em-QR-zXX" firstAttribute="centerY" secondItem="ALp-61-Coi" secondAttribute="centerY" id="XiR-dV-YaE"/>
+                            <constraint firstItem="6em-QR-zXX" firstAttribute="top" secondItem="BOD-vL-fCI" secondAttribute="bottom" constant="31" id="Ypb-H0-tEO"/>
+                            <constraint firstItem="jNV-SZ-9em" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="73" id="Yto-r6-CBb"/>
+                            <constraint firstItem="XvX-KM-gUh" firstAttribute="centerX" secondItem="WaB-QJ-6bS" secondAttribute="centerX" id="afT-df-VZI"/>
+                            <constraint firstItem="ymB-OG-H0j" firstAttribute="top" secondItem="hxS-Bw-MOz" secondAttribute="bottom" constant="69" id="c53-gv-l91"/>
+                            <constraint firstItem="XvX-KM-gUh" firstAttribute="top" secondItem="ALp-61-Coi" secondAttribute="bottom" constant="15" id="d4K-qb-l8W"/>
+                            <constraint firstItem="YcY-H7-4Th" firstAttribute="trailing" secondItem="PB1-vh-pTi" secondAttribute="trailing" id="hQU-tr-y5O"/>
+                            <constraint firstItem="WaB-QJ-6bS" firstAttribute="top" secondItem="0eD-oG-aRd" secondAttribute="bottom" constant="24" id="iXo-hf-VN4"/>
+                            <constraint firstItem="ALp-61-Coi" firstAttribute="trailing" secondItem="0eD-oG-aRd" secondAttribute="trailing" id="kl2-c9-ze9"/>
+                            <constraint firstItem="y9w-fp-tkS" firstAttribute="centerX" secondItem="WaB-QJ-6bS" secondAttribute="centerX" constant="5" id="o8P-Wo-99s"/>
+                            <constraint firstItem="jNV-SZ-9em" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" constant="3.5" id="ul4-ZQ-1YS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ALp-61-Coi" secondAttribute="trailing" constant="-3" id="wLU-ua-MtY"/>
+                            <constraint firstItem="8oT-rT-IzS" firstAttribute="trailing" secondItem="YcY-H7-4Th" secondAttribute="trailing" id="xCD-yA-KQe"/>
+                            <constraint firstItem="hxS-Bw-MOz" firstAttribute="top" secondItem="YcY-H7-4Th" secondAttribute="top" id="xG3-6d-77K"/>
+                            <constraint firstItem="y9w-fp-tkS" firstAttribute="centerX" secondItem="jNV-SZ-9em" secondAttribute="centerX" constant="1.5" id="xdL-e7-syL"/>
+                            <constraint firstItem="BOD-vL-fCI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="151" id="xtx-7E-J5K"/>
+                            <constraint firstItem="ALp-61-Coi" firstAttribute="leading" secondItem="0eD-oG-aRd" secondAttribute="leading" constant="80" id="y08-mK-lqO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="PB1-vh-pTi" secondAttribute="bottom" constant="115" id="y0g-cz-chf"/>
+                            <constraint firstItem="jNV-SZ-9em" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="23" id="z2L-Og-cjR"/>
+                            <constraint firstItem="YcY-H7-4Th" firstAttribute="leading" secondItem="PB1-vh-pTi" secondAttribute="leading" id="zUv-SN-A3I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="WifiPasswordButton" destination="PB1-vh-pTi" id="oyj-KQ-kgj"/>
+                        <outlet property="WifiSSIDButton" destination="YcY-H7-4Th" id="Kiy-18-AeO"/>
+                        <outlet property="WifiSwitchButton" destination="y9w-fp-tkS" id="ecQ-Zo-hxQ"/>
+                        <outlet property="chooseBLEButton" destination="jNV-SZ-9em" id="L4R-VW-k4Z"/>
+                        <outlet property="newBLENameTextField" destination="0eD-oG-aRd" id="zCe-le-nE3"/>
+                        <outlet property="requestBLENameChangeButton" destination="WaB-QJ-6bS" id="xx2-R9-M97"/>
+                        <outlet property="sendControlButton" destination="XvX-KM-gUh" id="BZM-Du-XWm"/>
+                        <outlet property="steeringTextField" destination="ALp-61-Coi" id="RAm-YO-Ulx"/>
+                        <outlet property="throttleTextField" destination="8oT-rT-IzS" id="F6i-mL-qps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.38461538461539" y="67.535545023696685"/>
+        </scene>
+        <!--Select Bluetooth View Controller-->
+        <scene sceneID="nmY-Uf-1bP">
+            <objects>
+                <viewController id="zaY-sV-KA6" customClass="SelectBluetoothViewController" customModule="ROAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cwD-7U-MQo">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="86d-Ya-5QC">
+                                <rect key="frame" x="16" y="10" width="358" height="746"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qzU-w9-iit">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="358" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qzU-w9-iit" id="H5z-CN-ce4">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YXW-Hr-udJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="86d-Ya-5QC" firstAttribute="bottom" secondItem="YXW-Hr-udJ" secondAttribute="bottom" id="CF8-WV-HHQ"/>
+                            <constraint firstItem="86d-Ya-5QC" firstAttribute="trailing" secondItem="cwD-7U-MQo" secondAttribute="trailingMargin" id="VaR-bi-ulj"/>
+                            <constraint firstItem="86d-Ya-5QC" firstAttribute="top" secondItem="YXW-Hr-udJ" secondAttribute="top" constant="10" id="jgJ-aj-4CY"/>
+                            <constraint firstItem="86d-Ya-5QC" firstAttribute="leading" secondItem="cwD-7U-MQo" secondAttribute="leadingMargin" id="tCO-6X-TVT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bluetoothTableView" destination="86d-Ya-5QC" id="agA-E4-hR3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kh3-0p-V0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="68"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

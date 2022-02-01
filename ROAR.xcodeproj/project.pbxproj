@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A09F224246A0E2AF2FBB6D81 /* Pods_ROAR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A498B2D702D7CB6768B7DD47 /* Pods_ROAR.framework */; };
+		E821AECB27274AF1009F49D2 /* ScanQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E821AECA27274AF1009F49D2 /* ScanQRCodeViewController.swift */; };
+		E83E6CA126ED57BF006B1E39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CA026ED57BF006B1E39 /* AppDelegate.swift */; };
+		E83E6CA326ED57BF006B1E39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CA226ED57BF006B1E39 /* SceneDelegate.swift */; };
+		E83E6CA526ED57BF006B1E39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CA426ED57BF006B1E39 /* ViewController.swift */; };
+		E83E6CA826ED57BF006B1E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83E6CA626ED57BF006B1E39 /* Main.storyboard */; };
+		E83E6CAA26ED57C4006B1E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E83E6CA926ED57C4006B1E39 /* Assets.xcassets */; };
+		E83E6CAD26ED57C4006B1E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E83E6CAB26ED57C4006B1E39 /* LaunchScreen.storyboard */; };
+		E83E6CB826ED57C4006B1E39 /* ROARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CB726ED57C4006B1E39 /* ROARTests.swift */; };
+		E83E6CC326ED57C4006B1E39 /* ROARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CC226ED57C4006B1E39 /* ROARUITests.swift */; };
+		E83E6CD126ED5A84006B1E39 /* ViewController+BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CD026ED5A84006B1E39 /* ViewController+BLE.swift */; };
+		E83E6CD326ED5ADF006B1E39 /* utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CD226ED5ADF006B1E39 /* utility.swift */; };
+		E83E6CD526ED5AEF006B1E39 /* AppStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CD426ED5AEF006B1E39 /* AppStruct.swift */; };
+		E83E6CD826ED5B9E006B1E39 /* Vapor in Frameworks */ = {isa = PBXBuildFile; productRef = E83E6CD726ED5B9E006B1E39 /* Vapor */; };
+		E83E6CDB26ED5C20006B1E39 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = E83E6CDA26ED5C20006B1E39 /* SwiftyBeaver */; };
+		E83E6CDD26ED5D4F006B1E39 /* ViewController+AR.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CDC26ED5D4F006B1E39 /* ViewController+AR.swift */; };
+		E83E6CDF26ED623E006B1E39 /* ControlCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CDE26ED623E006B1E39 /* ControlCenter.swift */; };
+		E83E6CE126ED631E006B1E39 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CE026ED631E006B1E39 /* Server.swift */; };
+		E83E6CE426ED6981006B1E39 /* Loaf in Frameworks */ = {isa = PBXBuildFile; productRef = E83E6CE326ED6981006B1E39 /* Loaf */; };
+		E83E6CE626ED6A9A006B1E39 /* SelectBluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83E6CE526ED6A9A006B1E39 /* SelectBluetoothViewController.swift */; };
+		E83E6CE926ED7147006B1E39 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = E83E6CE826ED7147006B1E39 /* JGProgressHUD */; };
+		E87D8FFB2737A9F60078F31F /* ChooseBLEViewController+BLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87D8FFA2737A9F60078F31F /* ChooseBLEViewController+BLE.swift */; };
+		E88C3796270557F800289DC1 /* models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E88C3795270557F800289DC1 /* models.scnassets */; };
+		E88C37A22705594800289DC1 /* ARPhoto2ViewController+Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C379C2705594800289DC1 /* ARPhoto2ViewController+Record.swift */; };
+		E88C37A32705594800289DC1 /* ARPhoto2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C379D2705594800289DC1 /* ARPhoto2ViewController.swift */; };
+		E88C37A42705594800289DC1 /* SelectContentDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C379E2705594800289DC1 /* SelectContentDelegate.swift */; };
+		E88C37A52705594800289DC1 /* ARPhoto2ViewController+ARKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C379F2705594800289DC1 /* ARPhoto2ViewController+ARKit.swift */; };
+		E88C37A62705594800289DC1 /* ARPhoto2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88C37A02705594800289DC1 /* ARPhoto2.storyboard */; };
+		E88C37A72705594800289DC1 /* ARPhoto2PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C37A12705594800289DC1 /* ARPhoto2PopupViewController.swift */; };
+		E88C37A927055BA000289DC1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88C37A827055BA000289DC1 /* MainViewController.swift */; };
+		E8C8EC8F273466C600CB2683 /* ViewController+UDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C8EC8E273466C600CB2683 /* ViewController+UDP.swift */; };
+		E8C8EC922737A5F300CB2683 /* ChooseBLE.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8C8EC912737A5F300CB2683 /* ChooseBLE.storyboard */; };
+		E8C8EC942737A60700CB2683 /* ChooseBLEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C8EC932737A60700CB2683 /* ChooseBLEViewController.swift */; };
+		E8EABA312737C2650009DCC1 /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = E8EABA302737C2650009DCC1 /* CocoaAsyncSocket */; };
+		E8EE23182729B8F100A93340 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = E8EE23172729B8F100A93340 /* NIO */; };
+		E8EE231A2729B8F100A93340 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = E8EE23192729B8F100A93340 /* NIOCore */; };
+		E8EE231C2729B8F100A93340 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = E8EE231B2729B8F100A93340 /* NIOConcurrencyHelpers */; };
+		E8EE231E2729B8F100A93340 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = E8EE231D2729B8F100A93340 /* NIOFoundationCompat */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E83E6CB426ED57C4006B1E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E83E6C9526ED57BF006B1E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E83E6C9C26ED57BF006B1E39;
+			remoteInfo = ROAR;
+		};
+		E83E6CBF26ED57C4006B1E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E83E6C9526ED57BF006B1E39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E83E6C9C26ED57BF006B1E39;
+			remoteInfo = ROAR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17661342EC3F52CA53CAC51B /* Pods-ROAR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROAR.debug.xcconfig"; path = "Target Support Files/Pods-ROAR/Pods-ROAR.debug.xcconfig"; sourceTree = "<group>"; };
+		A498B2D702D7CB6768B7DD47 /* Pods_ROAR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROAR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA70681EA7FA776D886D4DC2 /* Pods-ROAR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROAR.release.xcconfig"; path = "Target Support Files/Pods-ROAR/Pods-ROAR.release.xcconfig"; sourceTree = "<group>"; };
+		E821AECA27274AF1009F49D2 /* ScanQRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanQRCodeViewController.swift; sourceTree = "<group>"; };
+		E83E6C9D26ED57BF006B1E39 /* ROAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83E6CA026ED57BF006B1E39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E83E6CA226ED57BF006B1E39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E83E6CA426ED57BF006B1E39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E83E6CA726ED57BF006B1E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E83E6CA926ED57C4006B1E39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E83E6CAC26ED57C4006B1E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E83E6CAE26ED57C4006B1E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83E6CB326ED57C4006B1E39 /* ROARTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROARTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83E6CB726ED57C4006B1E39 /* ROARTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROARTests.swift; sourceTree = "<group>"; };
+		E83E6CB926ED57C4006B1E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83E6CBE26ED57C4006B1E39 /* ROARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83E6CC226ED57C4006B1E39 /* ROARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROARUITests.swift; sourceTree = "<group>"; };
+		E83E6CC426ED57C4006B1E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E83E6CD026ED5A84006B1E39 /* ViewController+BLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+BLE.swift"; sourceTree = "<group>"; };
+		E83E6CD226ED5ADF006B1E39 /* utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utility.swift; sourceTree = "<group>"; };
+		E83E6CD426ED5AEF006B1E39 /* AppStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStruct.swift; sourceTree = "<group>"; };
+		E83E6CDC26ED5D4F006B1E39 /* ViewController+AR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+AR.swift"; sourceTree = "<group>"; };
+		E83E6CDE26ED623E006B1E39 /* ControlCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenter.swift; sourceTree = "<group>"; };
+		E83E6CE026ED631E006B1E39 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		E83E6CE526ED6A9A006B1E39 /* SelectBluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBluetoothViewController.swift; sourceTree = "<group>"; };
+		E87D8FFA2737A9F60078F31F /* ChooseBLEViewController+BLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseBLEViewController+BLE.swift"; sourceTree = "<group>"; };
+		E88C3795270557F800289DC1 /* models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = models.scnassets; sourceTree = "<group>"; };
+		E88C379C2705594800289DC1 /* ARPhoto2ViewController+Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPhoto2ViewController+Record.swift"; sourceTree = "<group>"; };
+		E88C379D2705594800289DC1 /* ARPhoto2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPhoto2ViewController.swift; sourceTree = "<group>"; };
+		E88C379E2705594800289DC1 /* SelectContentDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectContentDelegate.swift; sourceTree = "<group>"; };
+		E88C379F2705594800289DC1 /* ARPhoto2ViewController+ARKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ARPhoto2ViewController+ARKit.swift"; sourceTree = "<group>"; };
+		E88C37A02705594800289DC1 /* ARPhoto2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ARPhoto2.storyboard; sourceTree = "<group>"; };
+		E88C37A12705594800289DC1 /* ARPhoto2PopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARPhoto2PopupViewController.swift; sourceTree = "<group>"; };
+		E88C37A827055BA000289DC1 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E8C8EC8E273466C600CB2683 /* ViewController+UDP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+UDP.swift"; sourceTree = "<group>"; };
+		E8C8EC912737A5F300CB2683 /* ChooseBLE.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseBLE.storyboard; sourceTree = "<group>"; };
+		E8C8EC932737A60700CB2683 /* ChooseBLEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBLEViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E83E6C9A26ED57BF006B1E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8EABA312737C2650009DCC1 /* CocoaAsyncSocket in Frameworks */,
+				E83E6CE926ED7147006B1E39 /* JGProgressHUD in Frameworks */,
+				E8EE231E2729B8F100A93340 /* NIOFoundationCompat in Frameworks */,
+				E8EE231C2729B8F100A93340 /* NIOConcurrencyHelpers in Frameworks */,
+				E8EE231A2729B8F100A93340 /* NIOCore in Frameworks */,
+				E83E6CD826ED5B9E006B1E39 /* Vapor in Frameworks */,
+				E83E6CDB26ED5C20006B1E39 /* SwiftyBeaver in Frameworks */,
+				E8EE23182729B8F100A93340 /* NIO in Frameworks */,
+				E83E6CE426ED6981006B1E39 /* Loaf in Frameworks */,
+				A09F224246A0E2AF2FBB6D81 /* Pods_ROAR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83E6CB026ED57C4006B1E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83E6CBB26ED57C4006B1E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41BC3300D1CB2E2AA101F09A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17661342EC3F52CA53CAC51B /* Pods-ROAR.debug.xcconfig */,
+				AA70681EA7FA776D886D4DC2 /* Pods-ROAR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4FF4785C1681E07655754356 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A498B2D702D7CB6768B7DD47 /* Pods_ROAR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E83E6C9426ED57BF006B1E39 = {
+			isa = PBXGroup;
+			children = (
+				E88C3795270557F800289DC1 /* models.scnassets */,
+				E83E6C9F26ED57BF006B1E39 /* ROAR */,
+				E83E6CB626ED57C4006B1E39 /* ROARTests */,
+				E83E6CC126ED57C4006B1E39 /* ROARUITests */,
+				E83E6C9E26ED57BF006B1E39 /* Products */,
+				41BC3300D1CB2E2AA101F09A /* Pods */,
+				4FF4785C1681E07655754356 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E83E6C9E26ED57BF006B1E39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E83E6C9D26ED57BF006B1E39 /* ROAR.app */,
+				E83E6CB326ED57C4006B1E39 /* ROARTests.xctest */,
+				E83E6CBE26ED57C4006B1E39 /* ROARUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E83E6C9F26ED57BF006B1E39 /* ROAR */ = {
+			isa = PBXGroup;
+			children = (
+				E8C8EC902737A5D900CB2683 /* ChooseBLE */,
+				E821AECA27274AF1009F49D2 /* ScanQRCodeViewController.swift */,
+				E88C3797270558A600289DC1 /* ARPhoto */,
+				E83E6CA026ED57BF006B1E39 /* AppDelegate.swift */,
+				E83E6CA226ED57BF006B1E39 /* SceneDelegate.swift */,
+				E83E6CA426ED57BF006B1E39 /* ViewController.swift */,
+				E8C8EC8E273466C600CB2683 /* ViewController+UDP.swift */,
+				E83E6CDC26ED5D4F006B1E39 /* ViewController+AR.swift */,
+				E83E6CD026ED5A84006B1E39 /* ViewController+BLE.swift */,
+				E83E6CE526ED6A9A006B1E39 /* SelectBluetoothViewController.swift */,
+				E83E6CA626ED57BF006B1E39 /* Main.storyboard */,
+				E83E6CA926ED57C4006B1E39 /* Assets.xcassets */,
+				E83E6CAB26ED57C4006B1E39 /* LaunchScreen.storyboard */,
+				E83E6CAE26ED57C4006B1E39 /* Info.plist */,
+				E83E6CD226ED5ADF006B1E39 /* utility.swift */,
+				E83E6CD426ED5AEF006B1E39 /* AppStruct.swift */,
+				E83E6CDE26ED623E006B1E39 /* ControlCenter.swift */,
+				E83E6CE026ED631E006B1E39 /* Server.swift */,
+				E88C37A827055BA000289DC1 /* MainViewController.swift */,
+			);
+			path = ROAR;
+			sourceTree = "<group>";
+		};
+		E83E6CB626ED57C4006B1E39 /* ROARTests */ = {
+			isa = PBXGroup;
+			children = (
+				E83E6CB726ED57C4006B1E39 /* ROARTests.swift */,
+				E83E6CB926ED57C4006B1E39 /* Info.plist */,
+			);
+			path = ROARTests;
+			sourceTree = "<group>";
+		};
+		E83E6CC126ED57C4006B1E39 /* ROARUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E83E6CC226ED57C4006B1E39 /* ROARUITests.swift */,
+				E83E6CC426ED57C4006B1E39 /* Info.plist */,
+			);
+			path = ROARUITests;
+			sourceTree = "<group>";
+		};
+		E88C3797270558A600289DC1 /* ARPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				E88C37A02705594800289DC1 /* ARPhoto2.storyboard */,
+				E88C37A12705594800289DC1 /* ARPhoto2PopupViewController.swift */,
+				E88C379D2705594800289DC1 /* ARPhoto2ViewController.swift */,
+				E88C379F2705594800289DC1 /* ARPhoto2ViewController+ARKit.swift */,
+				E88C379C2705594800289DC1 /* ARPhoto2ViewController+Record.swift */,
+				E88C379E2705594800289DC1 /* SelectContentDelegate.swift */,
+			);
+			path = ARPhoto;
+			sourceTree = "<group>";
+		};
+		E8C8EC902737A5D900CB2683 /* ChooseBLE */ = {
+			isa = PBXGroup;
+			children = (
+				E8C8EC912737A5F300CB2683 /* ChooseBLE.storyboard */,
+				E8C8EC932737A60700CB2683 /* ChooseBLEViewController.swift */,
+				E87D8FFA2737A9F60078F31F /* ChooseBLEViewController+BLE.swift */,
+			);
+			path = ChooseBLE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E83E6C9C26ED57BF006B1E39 /* ROAR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E83E6CC726ED57C4006B1E39 /* Build configuration list for PBXNativeTarget "ROAR" */;
+			buildPhases = (
+				E1EA542063A4D250171F60C5 /* [CP] Check Pods Manifest.lock */,
+				E83E6C9926ED57BF006B1E39 /* Sources */,
+				E83E6C9A26ED57BF006B1E39 /* Frameworks */,
+				E83E6C9B26ED57BF006B1E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ROAR;
+			packageProductDependencies = (
+				E83E6CD726ED5B9E006B1E39 /* Vapor */,
+				E83E6CDA26ED5C20006B1E39 /* SwiftyBeaver */,
+				E83E6CE326ED6981006B1E39 /* Loaf */,
+				E83E6CE826ED7147006B1E39 /* JGProgressHUD */,
+				E8EE23172729B8F100A93340 /* NIO */,
+				E8EE23192729B8F100A93340 /* NIOCore */,
+				E8EE231B2729B8F100A93340 /* NIOConcurrencyHelpers */,
+				E8EE231D2729B8F100A93340 /* NIOFoundationCompat */,
+				E8EABA302737C2650009DCC1 /* CocoaAsyncSocket */,
+			);
+			productName = ROAR;
+			productReference = E83E6C9D26ED57BF006B1E39 /* ROAR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E83E6CB226ED57C4006B1E39 /* ROARTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E83E6CCA26ED57C4006B1E39 /* Build configuration list for PBXNativeTarget "ROARTests" */;
+			buildPhases = (
+				E83E6CAF26ED57C4006B1E39 /* Sources */,
+				E83E6CB026ED57C4006B1E39 /* Frameworks */,
+				E83E6CB126ED57C4006B1E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E83E6CB526ED57C4006B1E39 /* PBXTargetDependency */,
+			);
+			name = ROARTests;
+			productName = ROARTests;
+			productReference = E83E6CB326ED57C4006B1E39 /* ROARTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E83E6CBD26ED57C4006B1E39 /* ROARUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E83E6CCD26ED57C4006B1E39 /* Build configuration list for PBXNativeTarget "ROARUITests" */;
+			buildPhases = (
+				E83E6CBA26ED57C4006B1E39 /* Sources */,
+				E83E6CBB26ED57C4006B1E39 /* Frameworks */,
+				E83E6CBC26ED57C4006B1E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E83E6CC026ED57C4006B1E39 /* PBXTargetDependency */,
+			);
+			name = ROARUITests;
+			productName = ROARUITests;
+			productReference = E83E6CBE26ED57C4006B1E39 /* ROARUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E83E6C9526ED57BF006B1E39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					E83E6C9C26ED57BF006B1E39 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					E83E6CB226ED57C4006B1E39 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E83E6C9C26ED57BF006B1E39;
+					};
+					E83E6CBD26ED57C4006B1E39 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = E83E6C9C26ED57BF006B1E39;
+					};
+				};
+			};
+			buildConfigurationList = E83E6C9826ED57BF006B1E39 /* Build configuration list for PBXProject "ROAR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E83E6C9426ED57BF006B1E39;
+			packageReferences = (
+				E83E6CD626ED5B9E006B1E39 /* XCRemoteSwiftPackageReference "vapor" */,
+				E83E6CD926ED5C20006B1E39 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				E83E6CE226ED6981006B1E39 /* XCRemoteSwiftPackageReference "Loaf" */,
+				E83E6CE726ED7146006B1E39 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				E8EE23162729B8F100A93340 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				E8EABA2F2737C2640009DCC1 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+			);
+			productRefGroup = E83E6C9E26ED57BF006B1E39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E83E6C9C26ED57BF006B1E39 /* ROAR */,
+				E83E6CB226ED57C4006B1E39 /* ROARTests */,
+				E83E6CBD26ED57C4006B1E39 /* ROARUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E83E6C9B26ED57BF006B1E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83E6CAD26ED57C4006B1E39 /* LaunchScreen.storyboard in Resources */,
+				E83E6CAA26ED57C4006B1E39 /* Assets.xcassets in Resources */,
+				E88C3796270557F800289DC1 /* models.scnassets in Resources */,
+				E88C37A62705594800289DC1 /* ARPhoto2.storyboard in Resources */,
+				E83E6CA826ED57BF006B1E39 /* Main.storyboard in Resources */,
+				E8C8EC922737A5F300CB2683 /* ChooseBLE.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83E6CB126ED57C4006B1E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83E6CBC26ED57C4006B1E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1EA542063A4D250171F60C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ROAR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E83E6C9926ED57BF006B1E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83E6CDF26ED623E006B1E39 /* ControlCenter.swift in Sources */,
+				E88C37A32705594800289DC1 /* ARPhoto2ViewController.swift in Sources */,
+				E83E6CE626ED6A9A006B1E39 /* SelectBluetoothViewController.swift in Sources */,
+				E83E6CDD26ED5D4F006B1E39 /* ViewController+AR.swift in Sources */,
+				E88C37A72705594800289DC1 /* ARPhoto2PopupViewController.swift in Sources */,
+				E83E6CD126ED5A84006B1E39 /* ViewController+BLE.swift in Sources */,
+				E8C8EC942737A60700CB2683 /* ChooseBLEViewController.swift in Sources */,
+				E88C37A52705594800289DC1 /* ARPhoto2ViewController+ARKit.swift in Sources */,
+				E88C37A927055BA000289DC1 /* MainViewController.swift in Sources */,
+				E83E6CD326ED5ADF006B1E39 /* utility.swift in Sources */,
+				E83E6CA526ED57BF006B1E39 /* ViewController.swift in Sources */,
+				E83E6CA126ED57BF006B1E39 /* AppDelegate.swift in Sources */,
+				E83E6CD526ED5AEF006B1E39 /* AppStruct.swift in Sources */,
+				E8C8EC8F273466C600CB2683 /* ViewController+UDP.swift in Sources */,
+				E88C37A42705594800289DC1 /* SelectContentDelegate.swift in Sources */,
+				E87D8FFB2737A9F60078F31F /* ChooseBLEViewController+BLE.swift in Sources */,
+				E88C37A22705594800289DC1 /* ARPhoto2ViewController+Record.swift in Sources */,
+				E821AECB27274AF1009F49D2 /* ScanQRCodeViewController.swift in Sources */,
+				E83E6CE126ED631E006B1E39 /* Server.swift in Sources */,
+				E83E6CA326ED57BF006B1E39 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83E6CAF26ED57C4006B1E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83E6CB826ED57C4006B1E39 /* ROARTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E83E6CBA26ED57C4006B1E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83E6CC326ED57C4006B1E39 /* ROARUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E83E6CB526ED57C4006B1E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E83E6C9C26ED57BF006B1E39 /* ROAR */;
+			targetProxy = E83E6CB426ED57C4006B1E39 /* PBXContainerItemProxy */;
+		};
+		E83E6CC026ED57C4006B1E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E83E6C9C26ED57BF006B1E39 /* ROAR */;
+			targetProxy = E83E6CBF26ED57C4006B1E39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E83E6CA626ED57BF006B1E39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E83E6CA726ED57BF006B1E39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E83E6CAB26ED57C4006B1E39 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E83E6CAC26ED57C4006B1E39 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E83E6CC526ED57C4006B1E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E83E6CC626ED57C4006B1E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E83E6CC826ED57C4006B1E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17661342EC3F52CA53CAC51B /* Pods-ROAR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = XU8Z88S4A2;
+				INFOPLIST_FILE = ROAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.ROAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E83E6CC926ED57C4006B1E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA70681EA7FA776D886D4DC2 /* Pods-ROAR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9;
+				DEVELOPMENT_TEAM = XU8Z88S4A2;
+				INFOPLIST_FILE = ROAR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerry.ROAR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E83E6CCB26ED57C4006B1E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WBD45T4M6;
+				INFOPLIST_FILE = ROARTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roar.ROARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROAR.app/ROAR";
+			};
+			name = Debug;
+		};
+		E83E6CCC26ED57C4006B1E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WBD45T4M6;
+				INFOPLIST_FILE = ROARTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roar.ROARTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ROAR.app/ROAR";
+			};
+			name = Release;
+		};
+		E83E6CCE26ED57C4006B1E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WBD45T4M6;
+				INFOPLIST_FILE = ROARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roar.ROARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ROAR;
+			};
+			name = Debug;
+		};
+		E83E6CCF26ED57C4006B1E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8WBD45T4M6;
+				INFOPLIST_FILE = ROARUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.roar.ROARUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ROAR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E83E6C9826ED57BF006B1E39 /* Build configuration list for PBXProject "ROAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E83E6CC526ED57C4006B1E39 /* Debug */,
+				E83E6CC626ED57C4006B1E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E83E6CC726ED57C4006B1E39 /* Build configuration list for PBXNativeTarget "ROAR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E83E6CC826ED57C4006B1E39 /* Debug */,
+				E83E6CC926ED57C4006B1E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E83E6CCA26ED57C4006B1E39 /* Build configuration list for PBXNativeTarget "ROARTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E83E6CCB26ED57C4006B1E39 /* Debug */,
+				E83E6CCC26ED57C4006B1E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E83E6CCD26ED57C4006B1E39 /* Build configuration list for PBXNativeTarget "ROARUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E83E6CCE26ED57C4006B1E39 /* Debug */,
+				E83E6CCF26ED57C4006B1E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E83E6CD626ED5B9E006B1E39 /* XCRemoteSwiftPackageReference "vapor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vapor/vapor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.48.5;
+			};
+		};
+		E83E6CD926ED5C20006B1E39 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.5;
+			};
+		};
+		E83E6CE226ED6981006B1E39 /* XCRemoteSwiftPackageReference "Loaf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/schmidyy/Loaf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
+		E83E6CE726ED7146006B1E39 /* XCRemoteSwiftPackageReference "JGProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JonasGessner/JGProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		E8EABA2F2737C2640009DCC1 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robbiehanson/CocoaAsyncSocket";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E8EE23162729B8F100A93340 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.33.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E83E6CD726ED5B9E006B1E39 /* Vapor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E83E6CD626ED5B9E006B1E39 /* XCRemoteSwiftPackageReference "vapor" */;
+			productName = Vapor;
+		};
+		E83E6CDA26ED5C20006B1E39 /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E83E6CD926ED5C20006B1E39 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+		E83E6CE326ED6981006B1E39 /* Loaf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E83E6CE226ED6981006B1E39 /* XCRemoteSwiftPackageReference "Loaf" */;
+			productName = Loaf;
+		};
+		E83E6CE826ED7147006B1E39 /* JGProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E83E6CE726ED7146006B1E39 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
+			productName = JGProgressHUD;
+		};
+		E8EABA302737C2650009DCC1 /* CocoaAsyncSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8EABA2F2737C2640009DCC1 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */;
+			productName = CocoaAsyncSocket;
+		};
+		E8EE23172729B8F100A93340 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8EE23162729B8F100A93340 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		E8EE23192729B8F100A93340 /* NIOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8EE23162729B8F100A93340 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOCore;
+		};
+		E8EE231B2729B8F100A93340 /* NIOConcurrencyHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8EE23162729B8F100A93340 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOConcurrencyHelpers;
+		};
+		E8EE231D2729B8F100A93340 /* NIOFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8EE23162729B8F100A93340 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOFoundationCompat;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E83E6C9526ED57BF006B1E39 /* Project object */;
+}

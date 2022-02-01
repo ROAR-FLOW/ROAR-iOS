@@ -1,0 +1,14 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "BerkeleyLogo.arreferenceimage"
+    },
+    {
+      "filename" : "roar_car.arreferenceimage"
+    }
+  ]
+}
